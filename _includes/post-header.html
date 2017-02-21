@@ -1,0 +1,14 @@
+<!-- Feel free to remove this div. Uses purplecoat: http://ellekasai.github.io/purplecoat.js -->
+<div data-purplecoat="shiori" data-purplecoat-label="post-header.html">
+<p class="text-muted">{{ page.date | date_to_string }}</p>
+{% if page.tag == "homework" %}
+<!-- 페이지가 과제페이지 일때만 나타남 -->
+<div class="well well-sm">
+  <ul>
+  	<h3>유의사항</h3>
+	  <li>과제 제출 지각은 1시간에 1000원으로 지각비가 증가하며 10시간 초과시 미제출로 간주합니다. (최대 1만원)</li>
+		<li>과제 미제출시 개인면담을 하게됩니다.</li>
+	</ul>
+</div>
+{% endif %}
+</div>

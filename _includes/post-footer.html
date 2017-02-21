@@ -1,0 +1,12 @@
+<!-- Feel free to remove this div. Uses purplecoat: http://ellekasai.github.io/purplecoat.js -->
+<!-- 페이지가 과제페이지 일때만 나타남 -->
+{% if page.tag == "homework"%}
+<div data-purplecoat="shiori" data-purplecoat-label="post-footer.html">
+<h3 class="section-header">
+  Post Footer
+</h3>
+<div class="well well-sm">
+  과제기한 : {{page.until}} 23:59:59
+</div>
+</div>
+{% endif %}

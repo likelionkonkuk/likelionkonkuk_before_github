@@ -1,0 +1,18 @@
+---
+title: Homework
+permalink: "homework/index.html"
+---
+<h2>과제는 목숨과 같다.</h2>
+<br>
+<div class="page-archive">
+{% for post in site.posts %}
+  {% if post.tag == "homework"%}
+  {% assign homework_until = post.until | date: "%Y 년 %m 월 %d 일" %}
+  {% assign newer_post_month_year = post.next.date | date: "%B %Y" %}
+  <p>
+    <a href="{{ post.url | prepend:site.baseurl}}" class="post-title-archive list">{{ post.title }}</a>
+    <small class="text-muted">과제기한 : {{ homework_until }}</small>
+  </p>
+  {% endif %}
+{% endfor %}
+</div>
