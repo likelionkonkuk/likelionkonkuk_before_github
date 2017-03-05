@@ -1,0 +1,20 @@
+---
+title: Challenge
+permalink: "challenge/index.html"
+---
+<h2>가장 먼저 완성하여 자유를 만끽하세요!</h2>
+<ul>
+  <li>승리한 팀에게 더 많은 혜택이 돌아갑니다.</li>
+</ul>
+<br>
+<div class="page-archive">
+{% for post in site.posts %}
+  {% if post.tag == "challenge"%}
+  {% assign newer_post_month_year = post.next.date | date: "%B %Y" %}
+  <p>
+    <a href="{{ post.url | prepend:site.baseurl}}" class="post-title-archive list">{{ post.title }}</a>
+    <small class="text-muted">승리팀 : {{ post.winner }} / MVP : {{ post.mvp }}</small>
+  </p>
+  {% endif %}
+{% endfor %}
+</div>
