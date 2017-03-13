@@ -1,7 +1,7 @@
 ---
 title: "(중요)과제 제출방법"
 tag: notice
-author: "천민우"
+author: "건대멋사"
 ---
 
 건대멋사는 협업툴의 원활한 사용을 위해 `git`을 통하여 과제를 다운로드(`clone`, `pull`) 업로드(`push`)합니다. 내용을 충분히 숙지한 뒤 과제를 제출해 주세요!
@@ -9,19 +9,19 @@ author: "천민우"
 
 ### 과제 제출방법
 - 주어진 다운로드 링크에 들어가 `git`을 사용하거나, `zip`파일로 다운로드 합니다.
-```git
+```
 git clone https://github.com/likelionkonkuk/example.git
 ```
 
 - __중요__ 과제를 받으면 자신의 이름을 `branch`로 추가, `checkout`으로 자신의 이름으로 전환한 뒤 과제를 수행합니다.(최초에는 `branch`가 `master`로 설정되어 있습니다. __절대로__ `master branch`로 과제를 수행하지 않도록합니다.)
-```git
+```
 git branch minwoo #branch를 추가한 뒤
 git checkout minwoo #자신의 이름으로 전환
 ```
 
 - 과제를 수행할때 유의사항 및 참고자료를 최대한 활용합니다.
 - 과제를 수행하면서 어려운부분은 주석으로 표시하고, 그부분에 대한 내용을 튜터가 한번에 확인할수 있도록 커밋메시지에 남깁니다.
-```html
+```
 (예를들어 html일 경우 )
 
 <!--#1 -->
@@ -53,8 +53,8 @@ git commit --amend
 
 ## Author
 
-written by [천민우](https://project42da.github.io).
+written by [건대멋사](likelionkonkuk.github.io).
 
-![](https://avatars.githubusercontent.com/project42da?v=2&s=100)
+![](https://avatars.githubusercontent.com/likelionkonkuk?v=2&s=100)
 
-<a href="https://project42da.github.io" target="_blank" class="btn btn-black"><i class="fa fa-github fa-lg"></i> Visit on Github Page &rarr;</a>
+<a href="https://github.com/likelionkonkuk" target="_blank" class="btn btn-black"><i class="fa fa-github fa-lg"></i> Visit on Github &rarr;</a>
