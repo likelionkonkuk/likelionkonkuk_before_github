@@ -9,11 +9,13 @@ author: "건대멋사"
 
 ### 과제 제출방법
 - 주어진 다운로드 링크에 들어가 `git`을 사용하거나, `zip`파일로 다운로드 합니다.
+
 ```
 git clone https://github.com/likelionkonkuk/example.git
 ```
 
 - __중요__ 과제를 받으면 자신의 이름을 `branch`로 추가, `checkout`으로 자신의 이름으로 전환한 뒤 과제를 수행합니다.(최초에는 `branch`가 `master`로 설정되어 있습니다. __절대로__ `master branch`로 과제를 수행하지 않도록합니다.)
+
 ```
 git branch minwoo #branch를 추가한 뒤
 git checkout minwoo #자신의 이름으로 전환
@@ -21,9 +23,9 @@ git checkout minwoo #자신의 이름으로 전환
 
 - 과제를 수행할때 유의사항 및 참고자료를 최대한 활용합니다.
 - 과제를 수행하면서 어려운부분은 주석으로 표시하고, 그부분에 대한 내용을 튜터가 한번에 확인할수 있도록 커밋메시지에 남깁니다.
+
 ```
 (예를들어 html일 경우 )
-
 <!--#1 -->
 <!-- 어려웠던 내용이나 이유 -->
 <div>어려운부분</div>
@@ -31,6 +33,7 @@ git checkout minwoo #자신의 이름으로 전환
 ```
 
 커밋직후 메시지를 수정할수 있습니다. `source tree`를 사용하면 더욱 쉽게 할 수 있습니다. 어려운 부분 뿐만아니라 과제를 수행하면서 느낌점을 함께 써줘도 좋습니다.
+
 ```
 git commit -m "천민우 #3"
 git commit --amend
