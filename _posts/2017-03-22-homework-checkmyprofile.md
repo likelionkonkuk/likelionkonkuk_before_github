@@ -1,13 +1,23 @@
 ---
-title: "1주차 과제 : 쳌마~프로퐐!"
+title: "1주차 과제 : 자기소개페이지 만들기"
 tag: homework
 author: "천민우"
 until: 2017-03-27
 ---
 
+[다운로드 링크](https://github.com/likelionkonkuk/w1_homework)
+
 - 부트스트랩을 사용해서 자기소개 페이지를 만드세요.
+- 부트스트랩은 `CDN`을 통해 연결하세요.
 - 이 과제는 추후 진행되는 수업 및 과제와 연결됩니다.
 - **최선을 다하세요**
+
+#### 디렉토리 구조
+```
+index.html
+css/
+└──style.css
+```
 
 
 ---
