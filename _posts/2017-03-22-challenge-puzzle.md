@@ -2,8 +2,8 @@
 title: "1주차 첼린지 : 퍼즐"
 tag: challenge
 author: "천민우"
-winner: ""
-mvp: ""
+winner: "다혜팀"
+mvp: "이현경"
 ---
 
 [다운로드 링크](https://github.com/likelionkonkuk/w1_challenge)
