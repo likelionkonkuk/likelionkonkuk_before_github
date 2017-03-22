@@ -4,10 +4,10 @@ tag: material
 author: "천민우"
 ---
 #### DOM(Document Object Model)
-![]({{ site.url }}/assets/material/w1_wed/CSSOM.png)
+![]({{ site.url }}/assets/material/w1_wed/DOM.png)
 
 #### CSSOM(CSS Object Model)
-![]({{ site.url }}/assets/material/w1_wed/DOM.png)
+![]({{ site.url }}/assets/material/w1_wed/CSSOM.png)
 
 #### 브라우저 랜더링
 ![]({{ site.url }}/assets/material/w1_wed/CRP.png)
