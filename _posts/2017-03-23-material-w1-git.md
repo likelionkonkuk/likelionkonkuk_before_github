@@ -1,5 +1,5 @@
 ---
-title: "Git"
+title: "1주차 보조자료 (Git)"
 tag: material
 author: "정다혜"
 ---

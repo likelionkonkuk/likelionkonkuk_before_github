@@ -1,5 +1,5 @@
 ---
-title: "1주차 수요일 수업자료"
+title: "1주차 수요일 수업자료 (Display Flex)"
 tag: material
 author: "천민우"
 ---

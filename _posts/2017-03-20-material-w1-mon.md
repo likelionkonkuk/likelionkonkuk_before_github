@@ -1,5 +1,5 @@
 ---
-title: "1주차 월요일 수업자료"
+title: "1주차 월요일 수업자료 (개발환경 구축)"
 tag: material
 author: "천민우"
 ---
