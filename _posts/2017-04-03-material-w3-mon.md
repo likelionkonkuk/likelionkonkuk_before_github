@@ -1,5 +1,5 @@
 ---
-title: "3주차 월요일 수업자료 (RoR - M**VC**)"
+title: "3주차 월요일 수업자료 (RoR - MVC)"
 tag: material
 author: "정다혜"
 ---
