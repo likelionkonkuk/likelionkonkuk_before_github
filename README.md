@@ -1,4 +1,4 @@
-건국대학교 멋쟁이사자처럼 5기 깃헙페이지 👾
+건국대학교 멋쟁이사자처럼 5기 깃헙페이지 😎
 ---
 [![멋쟁이사자처럼 건대](https://img.shields.io/badge/likelion-Konkuk Univ Facebook-blue.svg)](https://www.facebook.com/likelionkonkuk)
 
@@ -38,4 +38,7 @@ written by [천민우](https:본인깃헙url).
 <a href="https://깃헙url" target="_blank" class="btn btn-black"><i class="fa fa-github fa-lg"></i> Visit on Github Page &rarr;</a>
 ```
 
-
+### 첼린지 👾
+- 1주차 퍼즐 : MVP 김현경(미연팀) / 승리팀 다혜팀
+- 2주차 미연이의 성적표 : MVP 김지훈(다혜팀) / 승리팀 다혜팀
+- 3주차 로또 : MVP 송지연(다혜팀) / 승리팀 다혜팀

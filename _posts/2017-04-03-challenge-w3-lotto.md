@@ -2,6 +2,8 @@
 title: "3주차 첼린지 : 로또"
 tag: challenge
 author: "정다혜"
+winner: "다혜팀"
+mvp: "송지연"
 ---
 
 
