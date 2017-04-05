@@ -1,5 +1,5 @@
 ---
-title: "5기 1분기 결산 + 2분기 팀"
+title: "5기 1분기 결산"
 tag: notice
 author: "건대멋사"
 ---
