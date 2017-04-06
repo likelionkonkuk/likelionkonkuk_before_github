@@ -131,7 +131,6 @@ end
 
 ```erb
 <!--new.html.erb-->
-<%#아래에 복-붙! %>
 <h2>New Posts</h2>
 
 <%= render 'form' %>
