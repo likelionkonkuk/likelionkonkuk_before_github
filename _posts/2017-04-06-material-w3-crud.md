@@ -1,5 +1,5 @@
 ---
-title: "3주차 보조자료(API, JSON)"
+title: "3주차 보조자료(CRUD)"
 tag: material
 author: "정다혜"
 ---
