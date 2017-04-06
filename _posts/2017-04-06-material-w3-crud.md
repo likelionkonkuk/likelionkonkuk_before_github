@@ -36,8 +36,7 @@ end
 #### 5. index액션(Post 모델에 저장된 모든 요소 목록 출력)
 
 ```erb
-index.html.erb
-<%#아래에 복-붙! %>
+<!--index.html.erb-->
 <h2>Lists</h2>
 <% @posts.each do |post| %>
 	<h2><%= link_to post.title, post %></h2>
@@ -67,7 +66,7 @@ class PostsController < ApplicationController
   def show
   end
 
-private
+  private
 
   def find_posts
   	@post = Post.find(params[:id])
@@ -76,8 +75,7 @@ end
 ```
 
 ```erb
-show.html.erb
-<%#아래에 복-붙! %>
+<!--show.html.erb-->
 <h2>Title : <%= @post.title %> </h2>
 <p> Content : <%= @post.content %></p>
 
@@ -115,7 +113,7 @@ end
 ```
 
 ```erb
-#_form.html.erb
+<!--_form.html.erb-->
 <%= form_for @post do |f| %>
   <div class="field">
     <%= f.label :title %>
@@ -129,11 +127,10 @@ end
     <%= f.button :submit %>
   </div>
 <% end %>
-
 ```
 
 ```erb
-#new.html.erb
+<!--new.html.erb-->
 <%#아래에 복-붙! %>
 <h2>New Posts</h2>
 
