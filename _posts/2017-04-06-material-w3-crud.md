@@ -189,7 +189,6 @@ end
 
 ```erb
 <!-- edit.html.erb -->
-<%#아래에 복-붙! %>
 <h2>Edit Post</h2>
 
 <%= render 'form' %>
