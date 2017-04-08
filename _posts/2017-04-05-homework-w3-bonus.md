@@ -1,10 +1,11 @@
 ---
-title: "3주차 과제 : 자기소개페이지에 Model적용시키기"
+title: "3주차 보너스 과제 : 자기소개페이지에 Model적용시키기(휴학생필수)"
 tag: homework
 author: "정다혜"
+until: 2017-04-21
 ---
 
-* 자기소개페이지에 모델을 적용시켜주세요~
+* 자기소개페이지에 모델을 적용시켜주세요!
 
 #### 설치
 - `git`을 사용하거나 `zip`파일로 다운받아 설치합니다.
@@ -13,8 +14,11 @@ git clone https://github.com/likelionkonkuk/w3_homework2.git
 ```
 
 #### 유의사항
-- 이번 과제는 보너스 과제입니다.(필수 아님)
+- 이번 과제는 보너스 과제입니다.(필수 아님. 단, 휴학생 필수)
 - 시험공부 열심히하시구 화이팅!
+
+#### 참고자료
+- [3주차 수업자료(CRUD)](https://github.com/likelionkonkuk/w3_wed_material)
 
 ## Author
 
