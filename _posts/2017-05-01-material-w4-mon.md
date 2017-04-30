@@ -8,6 +8,10 @@ author: "천민우"
 
 쉽게 웹사이트에 사진을 업로드 할 수 있도록 도와주는 `gem`. 비슷한 잼으로는 `carrierwave`가 있다. 
 
+
+> paperclip강의는 유튜브 강의 혹은 보강으로 진행하겠습니다.😷
+
+
 ### 설치방법
 
 - `imageMagick`을 설치한다.
@@ -74,6 +78,8 @@ end
 <%= image_tag @post.avatar.url %>
 ```
 
+### 모의 아이디어톤 🚀
+- [과제링크]({% post_url 2017-05-01-homework-w4-idea1 %})
 
 ---
 
