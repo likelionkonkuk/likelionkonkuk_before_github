@@ -11,6 +11,7 @@ author: "천민우"
 ### 설치방법
 
 - `imageMagick`을 설치한다.
+
 ```sh
 #ubuntu
 sudo apt-get install imagemagick
@@ -20,11 +21,13 @@ brew install imagemagick
 ```
 
 - `Gemfile`에 `paperclip` 젬을 추가한뒤, `bundle install`.
+
 ```rb
 gem "paperclip"
 ```
 
 - `paperclip`을 통해 이미지를 추가할 `model`과 관계설정 및 `db`생성(title, description등이 있는 post모델이 있다고 가정.)
+
 ```sh
 #post 모델에 image라는 이미지를 추가하고 싶은경우
 rails generate paperclip post image
@@ -53,6 +56,7 @@ end
 ```
 
 - `_form.html.erb`에 이미지를 업로드 할수있도록 `form`태그를 수정
+
 ```erb
 <%= form_for @post, html: { multipart: true } do |f| %>
   <%= f.text_field :title %>
@@ -63,6 +67,7 @@ end
 
 
 -`show.html.erb`에서 업로드한 이미지 불러오기
+
 ```erb
 <%= @post.title%>
 <%= @post.description%>
