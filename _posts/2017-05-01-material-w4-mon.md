@@ -70,7 +70,7 @@ end
 ```
 
 
--`show.html.erb`에서 업로드한 이미지 불러오기
+- `show.html.erb`에서 업로드한 이미지 불러오기
 
 ```erb
 <%= @post.title%>
