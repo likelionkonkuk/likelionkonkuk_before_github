@@ -3,22 +3,56 @@ title: "5주차 수업자료 (devise)"
 tag: material
 author: "우미연"
 ---
+
+이 수업자료는 기존 프로젝트를 기반으로 `devise` 젬를 추가하는 내용입니다. (프로젝트 구조는 3주차 CRUD 보조자료와 같습니다.)
+
+### Devise
+여러가지 이유(보안 등)로 개발자가 직접 회원관리 시스템을 구현하기 쉽지 않은데, `devise`를 사용하면  쉽게 회원관리가 가능하다.
+
+- [devise github](https://github.com/plataformatec/devise)
+
 # Devise 사용하기
-### 1. devise 설치
+- `Gemfile`에 `devise`젬 추가후 `bundle install`을 실행한다.
+
 ```ruby
 #Gemfile
 gem 'devise'
 ```
 
-```
-$ bundle install
-$ rails g controller Posts title content
 
+- 다음 명령어를 사용하여 `devise`로 user모델을 생성할수 있다.
+
+```sh
 $ rails g devise:install
-$ rails g devise User
+$ rails g devise user
 ```
 
-### 2. 모델 관계 완성하기
+`rails g devise:install` 이후 나오는 4개의 과정을 시키는대로 해준다.(하라는대로만 하면된다.)
+
+4번의 `rails generate devise:views` 는 view를 생성해주는데 나중에 해도 관계없다.
+
+
+- 모델간의 관계를 설정해준다.(하나의 `user`가 다수의 `post`를 작성할수 있다고 가정.)
+
+```ruby
+# devise 젬을 통해 생성된 user.rb
+devise :database_authenticatable, :registerable,
+       :recoverable, :rememberable, :trackable, :validatable
+
+has_many :posts #이부분만 추가해준다.
+```
+
+
+```ruby
+# post.rb
+belongs_to :user
+```
+
+
+작성이 끝나면 `rake db:migrate` 명렁어를 실행한다.
+
+
+
 ```ruby
 # routes.rb
 Rails.application.routes.draw do
@@ -29,186 +63,28 @@ Rails.application.routes.draw do
 end
 ```
 
-```ruby
-# user.rb
-# Include default devise modules. Others available are:
-# :confirmable, :lockable, :timeoutable and :omniauthable
-devise :database_authenticatable, :registerable,
-       :recoverable, :rememberable, :trackable, :validatable
 
-has_many :posts
-```
+- **CRUD**에 권한을 부여한다.(index, showㄴ)
 
-```ruby
-# post.rb
-class Post < ApplicationRecord
-  belongs_to :user
-end
-```
-
-```
-$ rake db:migrate
-```
-
-### 3. CRUD
 ```ruby
 # posts_controller.rb
 class PostsController < ApplicationController
   before_action :authenticate_user!, except: [ :index, :show ]
-  before_action :find_posts, only: [:show, :edit, :update, :destroy]
 
-  def index
-    @posts = Post.all.order("created_at DESC")
-  end
+...
 
-  def new
-    @post = Post.new
-  end
-
-  def create
-    @post = Post.new(post_params)
-
-    if @post.save
-      redirect_to @post
-    else
-      render 'new'
-    end
-  end
-
-  def show
-  end
-
-  def edit
-  end
-
-  def update
-    if @post.update(post_params)
-      redirect_to @post
-    else
-      render 'edit'
-    end
-  end
-
-  def destroy
-  	@post.destroy
-  	redirect_to posts_path
-  end
-
-  private
-
-  def find_posts
-  	@post = Post.find(params[:id])
-  end
-
-  def post_params
-    params.require(:post).permit(:title, :content)
-  end
-end
 ```
 
+- 필요한 위치에 로그인 및 회원가입 페이지로 이동하는 링크를 달아준다.
+- 이때 `devise`에서 제공하는 `current_user`라는 변수를 이용하거나, `user_signed_in?`(로그인 되어있는 상태)를 이용하여 사용자가 로그인한 상태인지 확인하고 다른 ui를 적용할 수 있다.
+
 ```erb
-<!--index.html.erb-->
-<h2>Lists</h2>
-<% @posts.each do |post| %>
-	<h2><%= link_to post.title, post %></h2>
+<% if user_signed_in? %>
+    <%= link_to '로그아웃', destroy_user_session_path, method: :delete, data: { confirm: "Are you sure?" } %>
+<% else %>
+    <%= link_to '로그인', new_user_session_path %>
+    <%= link_to '회원가입', new_user_registration_path%>
 <% end %>
-<%= link_to "new post", new_post_path %>
-```
-
-```erb
-<!--new.html.erb-->
-<h2>New Posts</h2>
-
-<%= render 'form' %>
-
-<%= link_to "Back", posts_path %>
-```
-
-```erb
-<!--show.html.erb-->
-<h2>Title : <%= @post.title %> </h2>
-<p> Content : <%= @post.content %></p>
-
-<%= link_to "Home" ,root_path %>
-<%= link_to "edit post" , edit_post_path %>
-<%= link_to "delete post" , post_path(@post), method: :delete, data: {confirm: "Are you sure?"} %>
-```
-
-```erb
-<!--_form.html.erb-->
-<%= form_for @post do |f| %>
-  <div class="field">
-    <%= f.label :title %>
-    <%= f.text_field :title %>
-  </div>
-  <div class="field">
-    <%= f.label :content %>
-    <%= f.text_field :content %>
-  </div>
-  <div class="actions">
-    <%= f.button :submit %>
-  </div>
-<% end %>
-```
-
-```erb
-<!-- edit.html.erb -->
-<h2>Edit Post</h2>
-
-<%= render 'form' %>
-
-<%= link_to "Back", posts_path %>
-```
-
-### 4. nav-bar에 sign in, out, up, my_profile 생성하기
-```erb
-<!-- application.html.erb -->
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Devise2</title>
-    <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>  </head>
-
-  <body>
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <%= link_to 'Navbar', root_path, class: "navbar-brand" %>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <%= link_to 'Home', root_path, class: "nav-link" %>
-          </li>
-          <% if user_signed_in? %>
-            <li class="nav-item">
-              <%= link_to 'My Profile', edit_user_registration_path, class: "nav-link" %>
-            </li>
-            <li class="nav-item">
-              <%= link_to 'Sign out', destroy_user_session_path, method: :delete, data: { confirm: "Are you sure?" }, class: "nav-link" %>
-            </li>
-          <% else %>
-            <li class="nav-item">
-              <%= link_to 'Sign in', new_user_session_path, class: "nav-link" %>
-            </li>
-            <li class="nav-item">
-              <%= link_to 'Sign up', new_user_registration_path, class: "nav-link" %>
-            </li>
-          <% end %>
-        </ul>
-      </div>
-    </nav>
-    <%= yield %>
-  </body>
-</html>
-
 ```
 
 ## Author
