@@ -6,14 +6,14 @@ author: "우미연"
 # Devise 사용하기
 ### 1. devise 설치
 ```ruby
-gem 'devise', '~> 4.2', '>= 4.2.1'
+#Gemfile
+gem 'devise'
 ```
 
 ```
 $ bundle install
-$ rails new project_name
-$ cd project_name
-$ rails g controller Posts title content user:references
+$ rails g controller Posts title content
+
 $ rails g devise:install
 $ rails g devise User
 ```
@@ -31,14 +31,14 @@ end
 
 ```ruby
 # user.rb
-class User < ApplicationRecord
-  has_many :posts, dependent: :destroy
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable and :omniauthable
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable
-end
+# Include default devise modules. Others available are:
+# :confirmable, :lockable, :timeoutable and :omniauthable
+devise :database_authenticatable, :registerable,
+       :recoverable, :rememberable, :trackable, :validatable
+
+has_many :posts
 ```
+
 ```ruby
 # post.rb
 class Post < ApplicationRecord
