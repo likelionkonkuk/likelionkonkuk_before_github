@@ -12,7 +12,7 @@ author: "우미연"
 - [devise github](https://github.com/plataformatec/devise)
 
 # Devise 사용하기
-- `Gemfile`에 `devise`젬 추가후 `bundle install`을 실행한다.
+1. `Gemfile`에 `devise`젬 추가후 `bundle install`을 실행한다.
 
 ```ruby
 #Gemfile
@@ -20,7 +20,7 @@ gem 'devise'
 ```
 
 
-- 다음 명령어를 사용하여 `devise`로 user모델을 생성할수 있다.
+2. 다음 명령어를 사용하여 `devise`로 user모델을 생성할수 있다.
 
 ```sh
 $ rails g devise:install
@@ -32,7 +32,7 @@ $ rails g devise user
 4번의 `rails generate devise:views` 는 view를 생성해주는데 나중에 해도 관계없다.
 
 
-- 모델간의 관계를 설정해준다.(하나의 `user`가 다수의 `post`를 작성할수 있다고 가정.)
+3. 모델간의 관계를 설정해준다.(하나의 `user`가 다수의 `post`를 작성할수 있다고 가정.)
 
 ```ruby
 # devise 젬을 통해 생성된 user.rb
@@ -64,7 +64,7 @@ end
 ```
 
 
-- **CRUD**에 권한을 부여한다.(index, showㄴ)
+4. **CRUD**에 권한을 부여한다.(index, show)
 
 ```ruby
 # posts_controller.rb
@@ -75,8 +75,8 @@ class PostsController < ApplicationController
 
 ```
 
-- 필요한 위치에 로그인 및 회원가입 페이지로 이동하는 링크를 달아준다.
-- 이때 `devise`에서 제공하는 `current_user`라는 변수를 이용하거나, `user_signed_in?`(로그인 되어있는 상태)를 이용하여 사용자가 로그인한 상태인지 확인하고 다른 ui를 적용할 수 있다.
+5. 필요한 위치에 로그인 및 회원가입 페이지로 이동하는 링크를 달아준다.
+(이때 `devise`에서 제공하는 `current_user`라는 변수를 이용하거나, `user_signed_in?`(로그인 되어있는 상태)를 이용하여 사용자가 로그인한 상태인지 확인하고 다른 ui를 적용할 수 있다.) 
 
 ```erb
 <% if user_signed_in? %>
