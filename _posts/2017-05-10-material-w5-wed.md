@@ -228,6 +228,7 @@ end
 
 ### 참고자료
 - [Rails Active Record](http://guides.rubyonrails.org/association_basics.html)
+- [Rails Active Record Validations](http://guides.rubyonrails.org/active_record_validations.html)
 - [Faker](https://github.com/stympy/faker)
 
 
