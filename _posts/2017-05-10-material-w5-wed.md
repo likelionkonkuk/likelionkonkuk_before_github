@@ -97,69 +97,70 @@ end
 
 ----
 
-### User Task
+### 3. Use Task
 
 Make `db.rake` in `lib/tasks/` directory
 
 ```rb
 namespace :db do
 
-	desc "populates th database with user"
+  desc "populates th database with user"
 
-	task old: :environment do
-		5.times do
-			User.create!(
-				name:Faker::Name.name,
-				age:Faker::Number.between(40, 50),
-				email:Faker::Internet.email,
-				group_ids:1
-			)
-		end
-	end
+  task old: :environment do
+    5.times do
+      User.create!(
+         name:Faker::Name.name,
+         age:Faker::Number.between(40, 50),
+         email:Faker::Internet.email,
+         group_ids:1
+      )
+    end
+  end
 
-	task young: :environment do
-		5.times do
-			User.create!(
-				name:Faker::Name.name,
-				age:Faker::Number.between(20, 30),
-				email:Faker::Internet.email,
-				group_ids:2
-			)
-		end
-	end
+  task young: :environment do
+     5.times do
+       User.create!(
+         name:Faker::Name.name,
+         age:Faker::Number.between(20, 30),
+         email:Faker::Internet.email,
+         group_ids:2
+       )
+    end
+  end
 
-	task oldcomment: :environment do
-		(1..5).each do |i|
-			Comment.create!(
-				content:Faker::Lorem.sentence,
-				post_id:1,
-				user_id:i
-			)
-		end
-	end
+  task oldcomment: :environment do
+    (1..5).each do |i|
+      Comment.create!(
+        content:Faker::Lorem.sentence,
+	post_id:1,
+	user_id:i
+      )
+    end
+  end
+  
 end
 ```
 
 
-### Models Validates
+### 4. Models Validates
 
 #### app/models/user.rb
 
 ```ruby
 class User < ApplicationRecord
-	has_and_belongs_to_many :groups
-	has_many :posts
-	has_many :comments
+  has_and_belongs_to_many :groups
+  has_many :posts
+  has_many :comments
 
-	def name=(s)
+  def name=(s)
     super s.titleize
-	end
+  end
 	
-	RegExp = /\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
+  RegExp = /\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
 
-	validates :name, length: {maximum: 100}, presence: true
-	validates :age, numericality: {only_integer: true, greater_than: 19, less_than:30}, presence: true
-	validates :email, format: {with: RegExp}, uniqueness: {case_sensitive: false}, presence: true
+  validates :name, length: {maximum: 100}, presence: true
+  validates :age, numericality: {only_integer: true, greater_than: 19, less_than:30}, presence: true
+  validates :email, format: {with: RegExp}, uniqueness: {case_sensitive: false}, presence: true
 end
 ```
 
@@ -169,9 +170,9 @@ end
 
 ```ruby
 class Group < ApplicationRecord
-	has_and_belongs_to_many :users
+  has_and_belongs_to_many :users
 
-	validates :name, length: {maximum: 20}, uniqueness: true, presence: true
+  validates :name, length: {maximum: 20}, uniqueness: true, presence: true
 end
 ```
 
@@ -188,14 +189,14 @@ class Post < ApplicationRecord
   words = ["shit", "fuck", "hell"]
   
   before_save{ 
-  	words.each do |word| 
-  		len = word.length
-  		self.content.gsub!(/#{word}/, '*'*len) if(self.content.include?(word))
-  	end
+    words.each do |word| 
+      len = word.length
+      self.content.gsub!(/#{word}/, '*'*len) if(self.content.include?(word))
+    end
   }
 
   validates :title, length: {minimum: 2 , maximum: 30}, presence: true
-	validates :content, presence: true
+  validates :content, presence: true
 end
 ```
 
@@ -208,16 +209,16 @@ class Comment < ApplicationRecord
   belongs_to :user
   belongs_to :post
 
-	words = ["shit", "fuck", "hell"]
+  words = ["shit", "fuck", "hell"]
   
   before_save{ 
-  	words.each do |word| 
-  		len = word.length
-  		self.content.gsub!(/#{word}/, '*'*len) if(self.content.include?(word))
-  	end
+    words.each do |word| 
+      len = word.length
+      self.content.gsub!(/#{word}/, '*'*len) if(self.content.include?(word))
+    end
   }
 	
-	validates :content, length: {maximum: 200}, presence: true
+  validates :content, length: {maximum: 200}, presence: true
 end
 ```
 
