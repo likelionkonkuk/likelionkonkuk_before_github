@@ -15,6 +15,7 @@ author: "천민우"
 ## Structure
 
 #### User Model
+
 |id|email|age|created_at|updated_at|
 | :--- | :---: | :---: | :---: | :---: |
 |integer|string|integer|datetime|datetime|
@@ -22,6 +23,7 @@ author: "천민우"
 *has_many posts, has_many comments, has_and_belongs_to_many group*
 
 #### Post Model
+
 |id|title|content|user_id|created_at|updated_at|
 | :--- | :---: | :---: | :---: | :---: | :---: |
 |integer|string|text|integer|datetime|datetime|
@@ -29,6 +31,7 @@ author: "천민우"
 *belongs_to user, has_many comments*
 
 #### Comment Model
+
 |id|content|post_id|user_id|created_at|updated_at|
 | :--- | :---: | :---: | :---: | :---: | :---: |
 |integer|string|integer|integer|datetime|datetime|
@@ -36,6 +39,7 @@ author: "천민우"
 *belongs_to user, belongs_to post*
 
 #### Group Model
+
 |id|name|created_at|updated_at|
 | :--- | :---: | :---: | :---: |
 |integer|string|datetime|datetime|
