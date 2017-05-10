@@ -4,6 +4,8 @@ tag: material
 author: "천민우"
 ---
 
+*README.md 를 작성할때 요런식으로 작성하면 됩니다.*
+
 ## Goals
 
 - Learn how to use 1:N, M:N in model.
@@ -14,28 +16,28 @@ author: "천민우"
 
 #### User Model
 |id|email|age|created_at|updated_at|
-|---|---|---|---|---|
+| :--- | :---: | :---: | :---: | :---: |
 |integer|string|integer|datetime|datetime|
 
 *has_many posts, has_many comments, has_and_belongs_to_many group*
 
 #### Post Model
 |id|title|content|user_id|created_at|updated_at|
-|---|---|---|---|---|---|
+| :--- | :---: | :---: | :---: | :---: | :---: |
 |integer|string|text|integer|datetime|datetime|
 
 *belongs_to user, has_many comments*
 
 #### Comment Model
 |id|content|post_id|user_id|created_at|updated_at|
-|---|---|---|---|---|---|
+| :--- | :---: | :---: | :---: | :---: | :---: |
 |integer|string|integer|integer|datetime|datetime|
 
 *belongs_to user, belongs_to post*
 
 #### Group Model
 |id|name|created_at|updated_at|
-|---|---|---|---|
+| :--- | :---: | :---: | :---: |
 |integer|string|datetime|datetime|
 
 *has_and_belongs_to_many user*
