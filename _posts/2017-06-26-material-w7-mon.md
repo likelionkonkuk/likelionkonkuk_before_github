@@ -4,8 +4,6 @@ tag: material
 author: "정다혜"
 ---
 
-## Gem Nokogiri
-
 #### 참고페이지
 - [http://www.nokogiri.org/](http://www.nokogiri.org/tutorials/searching_a_xml_html_document.html)
 - [상황에 따른 적절한 gem 선택하기](https://stackoverflow.com/questions/4981379/what-are-some-good-ruby-based-web-crawlers)
