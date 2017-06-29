@@ -1,13 +1,13 @@
 ---
-title: "7주차 과제 : 크롤링하기"
+title: "7주차 과제 : Devise + Mailgun"
 tag: homework
 author: "정다혜"
-until: 2017-06-28
+until: 2017-07-02
 ---
-- 자신이 원하는 주제를 선정한 후, `nokogiri` gem을 이용한 웹 페이지를 만들어보자
+- 강의를 듣고난 후, 스크린샷으로 메일 온 것을 올려주세요.
 
 #### 참고페이지
-- [7주차 수업자료](http://konkuk.likelion.org/material-w7-mon)
+- [7주차 수업자료](http://konkuk.likelion.org/material-w7-thur)
 
 ## Author
 
