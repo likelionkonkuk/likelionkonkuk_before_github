@@ -21,9 +21,6 @@ config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 $ rails generate devise User
 ```
 
-```
-$ rails g migration AddConfirmableToDevise
-```
 
 ``` ruby
 # add_confirmable_to_devise
