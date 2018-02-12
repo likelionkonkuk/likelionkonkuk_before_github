@@ -1,8 +1,3 @@
----
-title: "건국대학교 멋쟁이사자처럼 5기 모집요강"
-tag: notice
-author: "건대멋사"
----
 ![]({{ site.url }}/assets/recruit.png)
 건국대학교 멋쟁이사자처럼 5기 공개모집
 ---
