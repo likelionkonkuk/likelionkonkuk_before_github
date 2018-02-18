@@ -110,7 +110,7 @@
 
 ### 문의
 
-**[건국대학교 멋쟁이사자처럼 메일](konkuk@likelion.org)** 또는 **[건국대학교 페이스북](https://www.facebook.com/likelionkonkuk/)**
+**건국대학교 멋쟁이사자처럼 메일(konkuk@likelion.org)** 또는 **[건국대학교 페이스북](https://www.facebook.com/likelionkonkuk/)**
 
 
 
