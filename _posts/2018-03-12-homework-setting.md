@@ -1,7 +1,7 @@
 ---
 title: "환경설정"
 tag: homework
-author: "정다혜"
+author: "건대멋사"
 until: 2018-03-14
 ---
 
@@ -19,8 +19,8 @@ until: 2018-03-14
 
 ## Author
 
-written by [정다혜](https://dh00023.github.io).
+written by [건대멋사](https://likelionkonkuk.github.io).
 
-![](https://avatars.githubusercontent.com/dh00023?v=2&s=100)
+![](https://avatars.githubusercontent.com/likelionkonkuk?v=2&s=100)
 
-<a href="https://dh00023.github.io" target="_blank" class="btn btn-black"><i class="fa fa-github fa-lg"></i> Visit on Github Page &rarr;</a>
+<a href="https://likelionkonkuk.github.io" target="_blank" class="btn btn-black"><i class="fa fa-github fa-lg"></i> Visit on Github Page &rarr;</a>
