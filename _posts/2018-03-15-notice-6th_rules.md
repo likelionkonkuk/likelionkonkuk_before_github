@@ -32,11 +32,12 @@ author: "건대멋사"
 <a id="#커리큘럼"></a>
 ### 커리큘럼
 
-0주차. OT(환경설정)
-1주차. GIT + Bootstrap
-2주차. Ruby
-3주차 - 14주차. Rails + AWS
-
+- 0주차(3/15) OT(환경설정)
+- 1주차(3/22) GIT + Bootstrap
+- 2주차(3/29) Ruby
+- 3주차(4/5) Rails(VC)
+- 4주차(4/12) Rails(View-Controller) : 간단한 게임
+- 중간고사
 
 <a id="#규칙"></a>
 ### 규칙
