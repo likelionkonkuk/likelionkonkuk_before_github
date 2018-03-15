@@ -10,35 +10,52 @@
     - homework : 과제. (tag: homework, author: "수업진행자", until: 마감일(yy-mm-dd))
     - challenge : 수업 중 첼린지. (tag: notice, author: "수업진행자", winner: "승리팀", mvp: "홍길동")
 
-### 작성방법 📝
-- `_post` 디렉토리에 `markdown`으로 문서작성
-- 문서명은 `년-월-일-tag-문서명` 으로함.(예: 2017-03-30-notice-5thnetworking.md)
-- 문서 내용 상,하단에 문서 정보를 기재한다.
-- 문서내에 사진 및 기타 소스가 있을경우 `assets` 디렉토리에 해당문서의 항목에 맞는 디렉토리에 넣는다. (예: assets/challenge/w1-orginal.png)
-- 단, 공지사항에 포함된 소스일경우 별도의 디렉토리를 구분하지 않고, `assets` 디렉토리에 넣는다.
+# 건대 멋사 README 작성 안내
 
-#### 상단 🔼
-```
-title: "(예)1주차 과제 : 쳌마~프로퐐!" //제목
-tag: homework //과제:homework, 공지:notice
-author: "천민우" //작성자
-until: 2017-04-05 //과제일 경우
-```
+### README 란 ? 
+: 자신의 Github repository 에 대해 설명하는 내용
+: 쉽게 말해 개발일지 정도라고 생각하면 됨!
 
-#### 하단 🔽
-```
----
+### README 
+: repository 의 최상위 폴더에 **README.md** 라는 이름으로 저장
+: 마크다운 파일의 작성은 **하루패드** 를 이용해 쉽게 할 수 있음
 
-## Author
 
-written by [천민우](https:본인깃헙url).
 
-![](https://avatars.githubusercontent.com/아이디?v=2&s=100)
+_ _ _
 
-<a href="https://깃헙url" target="_blank" class="btn btn-black"><i class="fa fa-github fa-lg"></i> Visit on Github Page &rarr;</a>
-```
+### HTML/CSS , Ruby 관련 과제
 
-### 첼린지 👾
-- 1주차 퍼즐 : MVP 김현경(미연팀) / 승리팀 다혜팀
-- 2주차 미연이의 성적표 : MVP 김지훈(다혜팀) / 승리팀 다혜팀
-- 3주차 로또 : MVP 송지연(다혜팀) / 승리팀 다혜팀
+##### 1. 개인 과제
+
+ - 구현 의도
+ - 오류 내용 + 오류 해결방법
+ - 간단한 소감
+
+##### 2. 조별 과제
+
+ - 구현 의도
+ - 역할분담 내용
+ - 조원별 오류 내용 + 오류 해결방법
+ - 간단한 소감
+
+_ _ _
+
+### Rails 관련 과제 
+
+##### 1. 개인 과제
+
+ - 구현 의도
+ - Controller 설명
+ - Model 설명
+ - 오류 내용 + 오류 해결방법
+ - 간단한 소감
+
+##### 2. 조별 과제
+
+ - 구현 의도
+ - Controller 설명
+ - Model 설명
+ - 역할분담 내용
+ - 조원별 오류 내용 + 오류 해결방법
+ - 간단한 소감
