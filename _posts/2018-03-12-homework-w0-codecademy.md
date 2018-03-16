@@ -14,6 +14,11 @@ until: 2018-03-21
 
 ---
 
+![]({{ site.url }}/assets/homework/codecademy.png)
+위의 이미지와 같이 이름과 Complete가 나오도록 스크린샷해서 슬랙 #homework에 올려주세요.
+
+---
+
 ## Author
 
 written by [건대멋사](https://likelionkonkuk.github.io).
