@@ -10,11 +10,11 @@ author: "건대멋사"
 
 * [virtualBox](https://download.virtualbox.org/virtualbox/5.1.30/) : 5.1.30
 
-![virtualbox](https://github.com/likelion-net/vagrant/blob/master/1.png)
+![virtualbox](https://github.com/likelion-net/vagrant/1.png)
 
 * [Vagrant](https://releases.hashicorp.com/vagrant/?_ga=2.237010176.1475687836.1513147132-756484628.1513147132) : 1.9.5
 
-![vagrant](https://github.com/likelion-net/vagrant/blob/master/2.png)![git](https://github.com/likelion-net/vagrant/blob/master/3.png)
+![vagrant](https://github.com/likelion-net/vagrant/2.png)![git](https://github.com/likelion-net/vagrant/3.png)
 
 * [git for windows](https://git-for-windows.github.io/) - git bash
 
@@ -23,14 +23,14 @@ author: "건대멋사"
 
 #### setting - vagrant
 
-1. Windows에서 폴더 하나를 만든다. (vagrant 가상 환경과 windows와 공유하는 폴더가 될 예정임.)![folder](https://github.com/likelion-net/vagrant/blob/master/4.png)
-2. 해당 폴더의 경로에서 git bash 창을 연다.![gitbash](https://github.com/likelion-net/vagrant/blob/master/5.png)![vagrant here](https://github.com/likelion-net/vagrant/blob/master/6.png)
+1. Windows에서 폴더 하나를 만든다. (vagrant 가상 환경과 windows와 공유하는 폴더가 될 예정임.)![folder](https://github.com/likelion-net/vagrant/4.png)
+2. 해당 폴더의 경로에서 git bash 창을 연다.![gitbash](https://github.com/likelion-net/vagrant/5.png)![vagrant here](./6.png)
 
 ```console
 $ vagrant init
 ```
 
-3. Vagrantfile이 생겼을텐데, 이를 수정하고 저장한다.![vagrant init](https://github.com/likelion-net/vagrant/blob/master/7.png)![vagrantfile](https://github.com/likelion-net/vagrant/blob/master/8.png)![vagrantfile](https://github.com/likelion-net/vagrant/blob/master/9.png)
+3. Vagrantfile이 생겼을텐데, 이를 수정하고 저장한다.![vagrant init](https://github.com/likelion-net/vagrant/7.png)![vagrantfile](https://github.com/likelion-net/vagrant/8.png)![vagrantfile](https://github.com/likelion-net/vagrant/9.png)
 
 ```
 # 다음 내용으로 수정
@@ -42,19 +42,19 @@ Vagrant.configure("2") do |config|
 end
 ```
 
-4. 가상 환경을 만든다.![vagrant up](https://github.com/likelion-net/vagrant/blob/master/10.png) ![result](https://github.com/likelion-net/vagrant/blob/master/11.png)
+4. 가상 환경을 만든다.![vagrant up](https://github.com/likelion-net/vagrant/10.png) ![result](https://github.com/likelion-net/vagrant/11.png)
 
 ```console
 $ vagrant up
 ```
 
-5. 가상환경에 접속한다.![vagrant ssh](https://github.com/likelion-net/vagrant/blob/master/12.png)
+5. 가상환경에 접속한다.![vagrant ssh](https://github.com/likelion-net/vagrant/12.png)
 
 ```console
 $ vagrant ssh
 ```
 
-6. 가상머신에 접속된 상태에서 공유폴더에 접근한다.![vagrant ssh](https://github.com/likelion-net/vagrant/blob/master/13.png)
+6. 가상머신에 접속된 상태에서 공유폴더에 접근한다.![vagrant ssh](https://github.com/likelion-net/vagrant/13.png)
 
 ```console
 $ cd /vagrant
