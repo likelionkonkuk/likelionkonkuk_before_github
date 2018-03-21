@@ -1,5 +1,5 @@
 ---
-title: "1주차 수업자료(Bootstrap)"
+title: "1주차 수업자료(Bootstrap + Git)"
 tag: material
 author: "정다혜"
 ---
@@ -11,8 +11,9 @@ author: "정다혜"
 	- 웹 디자인 때문에 개발 시간이 길어지는 문제 해결
 	- 반응형 웹 사이트 개발
 
-- [codeply](https://www.codeply.com/)로 직접 화면과 반응을 보면서 적용시켜볼 수 있다.
 
+
+- [Git 수업자료 다운받기](https://github.com/likelionkonkuk/w1_material_git)
 ---
 
 ### 참고자료
@@ -23,6 +24,8 @@ author: "정다혜"
 - [Sementic UI](https://semantic-ui.com/)
 - [Materialize](http://materializecss.com/)
 - [fontawesome](http://fontawesome.io/)
+- [codeply](https://www.codeply.com/)
+
 
 ---
 
