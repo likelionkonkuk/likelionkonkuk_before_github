@@ -4,11 +4,6 @@
 
 - jekyll [shiori theme](https://github.com/ellekasai/shiori)
 
-### 포스트 분류
-- 포스트는 크게 `notice`, `homework`, `challenge` 3종류로 나뉜다. 
-    - notice : 공지사항 및 기타 전달사항. (tag: notice, author: "건대멋사")
-    - homework : 과제. (tag: homework, author: "수업진행자", until: 마감일(yy-mm-dd))
-    - challenge : 수업 중 첼린지. (tag: notice, author: "수업진행자", winner: "승리팀", mvp: "홍길동")
 
 # 건대 멋사 README 작성 안내
 
