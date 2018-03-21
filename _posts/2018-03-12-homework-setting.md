@@ -1,5 +1,5 @@
 ---
-title: "환경설정"
+title: "0주차 과제 : 환경설정"
 tag: homework
 author: "건대멋사"
 until: 2018-03-14
