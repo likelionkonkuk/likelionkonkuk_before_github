@@ -36,7 +36,7 @@ images/
 	  <li>역할분담 내용</li>
       <li>조원별 오류 내용 + 오류 해결방법</li>
       <li>간단한 소감</li>
-      <li>참고문서<li>
+      <li>참고문서</li>
 	</ol>
 	<p>을 포함하여 repository 의 최상위 폴더에 **`README.md`** 라는 이름으로 저장해주세요.</p>
 </div>
