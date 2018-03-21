@@ -30,19 +30,18 @@ images/
 ---
 
 <div class="well well-sm">
-  	<ul>
-  	  <h3><code class="highlighter-rouge">README.md</code> 작성법</h3>
+  	<h3><code class="highlighter-rouge">README.md</code> 작성법</h3>
+  	<ol> 
 	  <li>구현 의도</li>
 	  <li>역할분담 내용</li>
       <li>조원별 오류 내용 + 오류 해결방법</li>
       <li>간단한 소감</li>
       <li>참고문서<li>
-	</ul>
-	을 포함하여 repository 의 최상위 폴더에 **`README.md`** 라는 이름으로 저장해주세요.
+      을 포함하여 repository 의 최상위 폴더에 **`README.md`** 라는 이름으로 저장해주세요.
+	</ol>
 </div>
 
 ---
-
 
 ### 팀구성
 
@@ -55,6 +54,7 @@ images/
 ---
 
 ### 참고자료
+
 - [세탁특공대](http://www.washswat.com/)
 - [SNOW](https://snow.me/)
 - [후스콜](https://whoscall.com/ko-KR/download/)
