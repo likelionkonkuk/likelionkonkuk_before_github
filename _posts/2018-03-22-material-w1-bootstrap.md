@@ -13,6 +13,27 @@ author: "정다혜"
 - 반응형 웹 사이트 개발
 
 
+#### 서브라임 package 추천
+
+1. `command`/`control`+`shift`+`p`
+2. install package
+	- Open in Browser
+		- `control`+`alt`+`c`(크롬)/`v`(firefox)/`s`(safari)
+	- Emmet
+
+#### 개발자도구
+
+크롬 개발자도구(`command`+`option/alt`+`I`)와 친해지자.
+
+구글에서 만든 웹브라우저인 크롬에는 개발을 도와주는 다양한 도구가 기본적으로 제공됩니다. 이를 개발자 도구라고 합니다. 개발자 도구를 이용하면 HTML, CSS, JavaScript의 생산성을 극대화 할 수 있습니다. 
+
+#### Unilion 게시판 만들기
+
+![]({{ site.url }}/assets/material/unilion.png)
+
+부트스트랩을 이용해서 Unilion Univ게시판을 만들어보자!
+
+
 
 - [Git 수업자료 다운받기](https://github.com/likelionkonkuk/w1_material_git)
 
