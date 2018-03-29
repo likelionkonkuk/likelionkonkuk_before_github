@@ -2,8 +2,8 @@
 title: "1주차 첼린지 : 구글"
 tag: challenge
 author: "정다혜"
-winner: ""
-mvp: ""
+winner: "전준혁"
+mvp: "전준혁"
 ---
 
 ![]({{ site.url }}/assets/homework/google.png)
