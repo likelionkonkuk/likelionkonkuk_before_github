@@ -1,5 +1,5 @@
 ---
-title: "1주차 과제 : 메소드 사전"
+title: "2주차 과제 : 메소드 사전"
 tag: homework
 author: "이현경"
 until: 2017-04-04
