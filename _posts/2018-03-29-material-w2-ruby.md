@@ -1,5 +1,5 @@
 ---
-title: "2주차 월요일 수업자료 (Ruby 변수-해시)"
+title: "2주차 수업자료 (Ruby)"
 tag: material
 author: "박현진"
 ---
@@ -25,4 +25,4 @@ Ruby 정리본은 다운로드 링크를 이용하세요!
 
 written by [박현진]
 
-<a href="https://hyunkyung12.github.io" target="_blank" class="btn btn-black"><i class="fa fa-github fa-lg"></i> Visit on Github Page &rarr;</a>
+<a href="https://github.com/HyeonJin1030" target="_blank" class="btn btn-black"><i class="fa fa-github fa-lg"></i> Visit on Github Page &rarr;</a>
