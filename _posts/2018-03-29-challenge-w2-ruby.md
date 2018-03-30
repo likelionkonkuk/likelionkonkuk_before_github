@@ -51,7 +51,7 @@ score = {
 hyun = []
 for i in 1..6
 	print "현경이의 #{i}번째 과목 성적을 입력하세요:  "
-	hyun.push(hyun[gets.chomp.upcase])
+	hyun.push(score[gets.chomp.upcase])
 end
 
 print hyun
