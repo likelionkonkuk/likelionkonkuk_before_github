@@ -48,19 +48,19 @@ score = {
 	"F" => 0
 }
 
-score = []
+hyun = []
 for i in 1..6
 	print "현경이의 #{i}번째 과목 성적을 입력하세요:  "
-	score.push(score[gets.chomp.upcase])
+	hyun.push(hyun[gets.chomp.upcase])
 end
 
-print score
+print hyun
 puts ""
 
 #우수한 과목, 재수강이 필요한과목
 count = [0,0]
 
-score.each do |a|
+hyun.each do |a|
 	if a >= 4.0
 		count[0]+=1
 	elsif a <= 2.5
@@ -79,11 +79,11 @@ def avg(input_arr)
 end
 
 puts "현경이의 재수강 과목의 수는 #{count[1]}개 , 우수한 과목의 수는 #{count[0]}개 입니다."
-puts "현경이의 평점은 #{avg(score)}입니다."
+puts "현경이의 평점은 #{avg(hyun)}입니다."
 
-if avg(score) >= 4.0
+if avg(hyun) >= 4.0
 	puts "성적장학금을 받을 수 있습니다!!!우와아아"
-elsif avg(score) < 2.0
+elsif avg(hyun) < 2.0
 	puts "학사경고입니다. 분발하세요"
 end
 ```
