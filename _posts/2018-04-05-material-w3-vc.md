@@ -6,6 +6,16 @@ author: "이현경"
 
 RoR에 대해서 배워봅시다.
 
+```
+$ ruby -v
+2.4.0
+
+$ rails -v
+5.0.6
+```
+
+버전 맞춰주세요.
+
 ### 다운로드링크
 
 - [RoR 수업자료](https://github.com/likelionkonkuk/w3_material_6th)

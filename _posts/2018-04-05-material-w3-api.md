@@ -4,7 +4,7 @@ tag: material
 author: "정다혜"
 ---
 
-### 1. 사용자를 위한 인터페이스 (UI : User Interface)
+### 1. 사용자를 위한 인터열이스 (UI : User Interface)
 
 [로또 페이지 바로가기](http://www.nlotto.co.kr/common.do?method=main )
 
