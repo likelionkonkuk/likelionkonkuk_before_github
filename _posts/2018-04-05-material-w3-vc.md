@@ -1,5 +1,5 @@
 ---
-title: "3주차 목요일 수업자료 (RoR - VC)"
+title: "3주차 수업자료 (RoR - VC)"
 tag: material
 author: "이현경"
 ---
