@@ -7,10 +7,10 @@ author: "정다혜"
 MVC패턴의 Model을 배워봅시다.
 
 - 모델관계(1:1, 1:N, N:M)
-- Faker gem을 사용해 더미 데이터 사용하기
 - migration
-- validation
 - seed
+- Faker gem을 사용해 더미 데이터 사용하기
+- validation
 - rake task
 
 #### 유의사항
