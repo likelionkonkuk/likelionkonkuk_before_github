@@ -271,7 +271,7 @@ $ rails g task my_task test1 test2
 $ rake my_task:test1
 $ rake my_task:test2
 
-# 한번에 다 실행하기
+# my_task task 전체 목록 보기
 $ rake -T | grep my_task
 ```
 
