@@ -275,6 +275,24 @@ $ rake my_task:test2
 $ rake -T | grep my_task
 ```
 
+모든 task를 출력해주고 싶다면 아래와 같이 해주면된다.
+```ruby
+namespace :my_task do
+  desc 'All'
+  task all: [:test1, :test2]
+
+  desc "TODO"
+  task test1: :environment do
+    # 내용
+  end
+
+  desc "TODO"
+  task test2: :environment do
+    # 내용
+  end
+
+end
+```
 
 ---
 
