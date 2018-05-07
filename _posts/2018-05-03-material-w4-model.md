@@ -94,7 +94,7 @@ post모델과 1:N관계를 갖고 있는 comment 모델을 생성할 것이다. 
 $ rails g model Comment content:text post:references
 ```
 
-이미 Post.rb에서 belongs_to 관계는 설정 된 것을 확인할 수 있다.
+이미 Comment.rb에서 belongs_to 관계는 설정 된 것을 확인할 수 있다.
 
 ```rb
 # Comment.rb
