@@ -19,7 +19,7 @@ author: "이현경"
 
 ### 5.RESTful 한 라우팅
 
-[강의자료 받기]()
+[강의자료 받기](https://github.com/likelionkonkuk/w5_material)
 
 ## Author
 
